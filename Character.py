@@ -10,6 +10,7 @@ class Character:
             self.health -= damage
         else:
             self.health = 0
+        self.is_alive()
 
     def is_alive(self):
         if self.health <= 0:
